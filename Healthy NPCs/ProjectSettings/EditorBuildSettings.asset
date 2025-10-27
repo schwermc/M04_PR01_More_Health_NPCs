@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Number.unity
     guid: 6d3cba41da5e6a7428052ef2b7d1eb01
+  - enabled: 1
+    path: Assets/Scenes/OverTime.unity
+    guid: 13c7381cb3521b748aa74a25c5dca7a9
+  - enabled: 1
+    path: Assets/Scenes/Regeneration.unity
+    guid: 813986b1e8f926740a39ce80ba527f82
   m_configObjects: {}

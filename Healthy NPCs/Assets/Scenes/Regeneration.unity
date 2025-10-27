@@ -393,10 +393,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 535107300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2db2fddf0350f4e8fbf11265ab8ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9810cc0c32abba14fbd6b53badc47802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  healHealth: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,11 +815,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1239414907003340132, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Regeneration
-      objectReference: {fileID: 0}
-    - target: {fileID: 1239414907003340132, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
-      propertyPath: m_fontSize
-      value: 15.6
+      value: OverTime
       objectReference: {fileID: 0}
     - target: {fileID: 2577409093344802549, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_Pivot.x
@@ -902,15 +899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3439633173395519028, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Over Time
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439633173395519028, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
-      propertyPath: m_fontSize
-      value: 20.2
+      value: Numbers
       objectReference: {fileID: 0}
     - target: {fileID: 3745184161151274541, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: OverTime
+      value: Number
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -938,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Number
+      value: Standard
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -946,11 +939,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5715003456815496883, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Regeneration
+      value: OverTime
       objectReference: {fileID: 0}
     - target: {fileID: 6611739980168463973, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Numbers
+      value: Set Amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611739980168463973, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
+      propertyPath: m_fontSize
+      value: 18.05
       objectReference: {fileID: 0}
     - target: {fileID: 6655026720910709431, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_Name
@@ -958,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7407973505142304400, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Hits are 10 ph
+      value: NPC Regens health
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

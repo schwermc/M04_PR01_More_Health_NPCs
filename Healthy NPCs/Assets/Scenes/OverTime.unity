@@ -270,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   turnSpeed: 90
-  takeDamage: 10
+  takeDamage: 5
 --- !u!65 &535107302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -393,10 +393,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 535107300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2db2fddf0350f4e8fbf11265ab8ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 712c86c082008ae4b8e732b26693a555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  lostHealth: -1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,15 +903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3439633173395519028, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Over Time
-      objectReference: {fileID: 0}
-    - target: {fileID: 3439633173395519028, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
-      propertyPath: m_fontSize
-      value: 20.2
+      value: Numbers
       objectReference: {fileID: 0}
     - target: {fileID: 3745184161151274541, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: OverTime
+      value: Number
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -938,7 +935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Number
+      value: Standard
       objectReference: {fileID: 0}
     - target: {fileID: 4660122236626906147, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -950,7 +947,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6611739980168463973, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Numbers
+      value: Set Amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611739980168463973, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
+      propertyPath: m_fontSize
+      value: 18.05
       objectReference: {fileID: 0}
     - target: {fileID: 6655026720910709431, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_Name
@@ -958,7 +959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7407973505142304400, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
       propertyPath: m_text
-      value: Hits are 10 ph
+      value: One hit to NPC to lose health over time
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407973505142304400, guid: e146e4a2a50cdb547878a88a64c26bf4, type: 3}
+      propertyPath: m_fontSize
+      value: 35.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
