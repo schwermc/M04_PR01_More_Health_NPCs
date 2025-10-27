@@ -4,6 +4,7 @@ public class NPC : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private float turnSpeed = 90f;
+    [SerializeField] int takeDamage = 10;
 
     internal void TakeDamage(int amount)
     {
@@ -17,7 +18,7 @@ public class NPC : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(10);
+            TakeDamage(takeDamage);
         }
     }
 }
