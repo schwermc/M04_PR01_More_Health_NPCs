@@ -34,7 +34,10 @@ public class NumberOfHitsHealth : MonoBehaviour, IHealth
             OnHPPctChanged(CurrentHpPct);
 
             if (hitsRemaining <= 0)
+            {
                 OnDied();
+                GameObject.Destroy(this.gameObject);
+            }
         }
     }
 
